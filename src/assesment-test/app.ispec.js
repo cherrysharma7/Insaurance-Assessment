@@ -1,4 +1,5 @@
 const { userLogin } = require('../view/login');
+const {addquote, } = require('../view/login');
 
 
 describe('Insaurance Co', () => {
@@ -20,4 +21,12 @@ it(
     await userLogin();
     //Assertion User have signed in.
     await expect(page).toMatch('John Smith');
+    });
+
+  it(
+    'Should test to add Quote',
+    async () => {
+      // test
+      await addquote();
+      await expect(page).toMatch('Congratulations');
     });
