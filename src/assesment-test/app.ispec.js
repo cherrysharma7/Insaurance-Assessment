@@ -1,5 +1,6 @@
 const { userLogin } = require('../view/login');
-const {addquote, } = require('../view/login');
+const {addquote } = require('../view/addQuote');
+const { contactForm } = require('../view/contactUs')
 
 
 describe('Insaurance Co', () => {
@@ -30,3 +31,11 @@ it(
       await addquote();
       await expect(page).toMatch('Congratulations');
     });
+  it(
+    'should test for contact-us',
+    async () => {
+      // Test
+      await contactForm();
+      await page.waitForSelector(contactUsSelector.detailBtn);
+    }
+  );

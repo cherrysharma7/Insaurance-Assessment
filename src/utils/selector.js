@@ -22,9 +22,24 @@ const quoteSelector = {
   crCardNumber: 'input[name=purchaseQuote:cardnumber]',
   expDate: 'input[name=purchaseQuote:expiration]',
   btn: 'input[name=purchaseQuote:purchase]',
-}
+};
+
+const contactUsSelector = {
+  detailBtn: 'input[name=logout-form:details]',
+  titleBox: 'input[name=autoquote:f1]',
+  nameBox: 'input[name=autoquote:f2]',
+  lastName: 'input[name=autoquote:f3]',
+  address: 'input[name=autoquote:f5]',
+  city: 'input[name=autoquote:f7]',
+  state: 'input[name=autoquote:f8]',
+  zip: 'input[name=autoquote:f9]',
+  telephone: 'input[name=autoquote:f10]',
+  email: 'input[name=autoquote:f11]',
+  commentBox: 'input[name=autoquote:f12]',
+};
 
 module.exports = { 
   loginSelectors,
-  quoteSelector
+  quoteSelector,
+  contactUsSelector,
 };
