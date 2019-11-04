@@ -1,6 +1,8 @@
 const { userLogin } = require('../view/login');
 const {addquote } = require('../view/addQuote');
-const { contactForm } = require('../view/contactUs')
+const { contactForm } = require('../view/contactUs');
+const { agentLook } = require('../view/agentLookOut');
+const { logOut } = require('../view/logout');
 
 
 describe('Insaurance Co', () => {
