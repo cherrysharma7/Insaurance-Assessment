@@ -37,5 +37,19 @@ it(
       // Test
       await contactForm();
       await page.waitForSelector(contactUsSelector.detailBtn);
+    });
+  it(
+    'should test for Agent Look Out' ,
+    async () => {
+      await agentLook();
+      await expect(page).toMatch('Insurance Co. Agents (application/json)');
     }
   );
+  It(
+    'should logout the user' ,
+    async () => {
+      await logOut();
+      await page.waitForSelector(loginSelectors.email);
+    },
+  );
+  });
