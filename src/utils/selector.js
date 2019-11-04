@@ -38,8 +38,19 @@ const contactUsSelector = {
   commentBox: 'input[name=autoquote:f12]',
 };
 
+const agentLookOutSelector = {
+  zipcode: 'input[name=zip-search:zipcode]',
+  searchBtn: 'input[name=zip-search:search-zipcode]',
+};
+
+const logoutSelector = {
+  logoutButton: 'input[name=logout-form:logout]',
+};
+
 module.exports = { 
   loginSelectors,
   quoteSelector,
   contactUsSelector,
+  agentLookOutSelector,
+  logoutSelector,
 };

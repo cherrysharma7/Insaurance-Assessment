@@ -5,6 +5,7 @@
     // Click on choose One dropdown
   const chooseOne = await page.$(quoteSelector.chooseOne);
   await chooseOne.click();
+  // Select the option from thr drop Dowm
   await page.select(quoteSelector.dropDown, 'quote_auto.jsf');
   await page.waitForNavigation();
   await page.type(quoteSelector.zipCode, 2148);
